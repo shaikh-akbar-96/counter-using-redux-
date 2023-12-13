@@ -37,3 +37,23 @@
 .text {
   color: navy;
 }
+
+@media (max-width: 270px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+}
+
+@media (max-width: 270px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
