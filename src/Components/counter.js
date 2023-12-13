@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { store } from "../store/store";
 import { decrement, increment } from "../store/actions/counterAction.js";
+import "./counter.css";
 
 const Counter = () => {
   const [counter, setCounter] = useState(0);
@@ -20,11 +21,19 @@ const Counter = () => {
     setCounter(state.counter);
   };
   return (
-    <div>
-      <h2>Counter</h2>
-      <div>{counter}</div>
-      <button onClick={onIncrement}>increment</button>
-      <button onClick={onDecrement}>decrement</button>
+    <div className="main">
+      <h2 className="heading">Counter</h2>
+      <br />
+      <div className="text">{counter}</div>
+      <br />
+      <div className="buttons">
+        <button onClick={onIncrement} className="increase_btn">
+          increment
+        </button>
+        <button onClick={onDecrement} className="decrease_btn">
+          decrement
+        </button>
+      </div>
     </div>
   );
 };

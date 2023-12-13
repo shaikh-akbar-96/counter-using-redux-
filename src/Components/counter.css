@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+
+.buttons {
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.increase_btn {
+  background-color: rgb(7, 193, 3);
+}
+.decrease_btn {
+  background-color: rgb(236, 3, 3);
+}
+.increase_btn,
+.decrease_btn {
+  padding: 6px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+}
+
+.heading {
+  font-weight: bolder;
+  color: darkblue;
+}
+
+.text {
+  color: navy;
+}
